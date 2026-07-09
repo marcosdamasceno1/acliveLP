@@ -1,0 +1,20 @@
+PASTA DE LOGOS DOS CLIENTES — Aclive
+=====================================
+
+Coloque aqui as logomarcas dos clientes que aparecem no carrossel
+"Marcas que já subiram com a Aclive".
+
+COMO ADICIONAR / TROCAR:
+1. Suba os arquivos NESTA pasta (logos/), na public_html.
+2. Use PNG com fundo transparente (fica melhor no fundo escuro).
+3. Nomes que o site já espera (basta subir com estes nomes):
+      cliente-1.png
+      cliente-2.png
+      cliente-3.png
+      cliente-4.png
+4. Depois é só dar Ctrl + F5 no site.
+
+QUER MAIS DE 4 LOGOS?
+Peça para o desenvolvedor adicionar cliente-5.png, cliente-6.png etc.
+no index.html (a lista aparece duas vezes, para o carrossel girar sem
+emenda — precisa adicionar nos dois lugares).
