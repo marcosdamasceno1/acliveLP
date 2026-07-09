@@ -172,6 +172,11 @@ h2 em {
 
 .logo-mark { width: 34px; height: 27px; display: block; }
 
+/* logomarca oficial (arquivo logo-aclive.svg) */
+.logo-img { height: 40px; width: auto; display: block; }
+
+.footer .logo-img { height: 52px; }
+
 .logo-text {
   font-family: var(--font-display);
   font-weight: 800;
