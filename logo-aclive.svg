@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 150" fill="none" role="img" aria-label="Aclive">
-  <!-- barras ascendentes + seta -->
-  <path d="M12 96 L150 30" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
-  <path d="M120 20 L156 27 L149 63" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M22 108 V88 L44 78 V108 Z" fill="#fff"/>
-  <path d="M52 108 V72 L74 62 V108 Z" fill="#fff"/>
-  <path d="M82 108 V56 L104 46 V108 Z" fill="#fff"/>
-  <path d="M112 108 V40 L134 30 V108 Z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" fill="none" role="img" aria-label="Aclive">
+  <!-- 3 barras ascendentes -->
+  <path d="M18 100 V90 L48 84 V100 Z" fill="#fff"/>
+  <path d="M56 100 V78 L86 72 V100 Z" fill="#fff"/>
+  <path d="M94 100 V66 L134 58 V100 Z" fill="#fff"/>
+  <!-- seta longa cruzando por cima -->
+  <path d="M14 92 L170 40" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M150 30 L172 39 L163 61" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- wordmark -->
-  <text x="105" y="140" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="6" fill="#fff">ACLIVE</text>
+  <text x="76" y="142" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="3" fill="#fff">ACLIVE</text>
 </svg>
