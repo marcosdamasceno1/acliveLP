@@ -484,31 +484,35 @@ h2 em {
   margin-bottom: 2.4rem;
 }
 
-.logos-marquee {
-  display: flex;
-  width: max-content;
+.logos-viewport {
+  overflow: hidden;
   /* esmaece as bordas para o loop parecer infinito */
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 
 .logos-track {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  padding-right: clamp(2.5rem, 6vw, 5rem);
-  animation: logos-scroll 34s linear infinite;
+  width: max-content;
+  /* a lista aparece 2x no HTML; deslizar -50% mostra exatamente 1 lista,
+     e como a 2ª é idêntica, o recomeço é invisível (loop sem emenda) */
+  animation: logos-scroll 40s linear infinite;
+  will-change: transform;
 }
 
 @keyframes logos-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
+  to   { transform: translateX(-50%); }
 }
 
 .clients-band:hover .logos-track { animation-play-state: paused; }
 
 .client-logo {
-  flex-shrink: 0;
+  flex: 0 0 auto;
+  /* espaçamento por logo (não usar gap): garante que -50% caia exato */
+  margin: 0 clamp(1.6rem, 4vw, 3.2rem);
   color: rgba(255, 255, 255, 0.55);
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -882,8 +886,19 @@ h2 em {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .marquee-track { animation: none; }
-  .logos-track { animation: none; }
   .chart-line { animation: none; stroke-dashoffset: 0; }
+
+  /* Sem animação: carrossel de arrastar (não congela cortado).
+     Esconde a 2ª lista duplicada e libera o scroll horizontal manual. */
+  .logos-track { animation: none; }
+  .logos-viewport {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scrollbar-width: none;
+  }
+  .logos-viewport::-webkit-scrollbar { display: none; }
+  .client-logo[aria-hidden="true"] { display: none; }
   .chart-dot { animation: none; opacity: 1; }
 }
 
