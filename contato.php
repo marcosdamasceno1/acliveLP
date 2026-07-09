@@ -7,7 +7,7 @@
  *
  * EDITAR: coloque abaixo o e-mail que deve receber os leads.
  */
-$destinatario = 'contato@digitalaclive.com.br';
+$destinatario = 'digitalaclive@gmail.com';
 
 header('Content-Type: application/json; charset=utf-8');
 
