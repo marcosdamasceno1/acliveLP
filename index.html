@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -243,34 +243,73 @@
       <p class="climb-sub reveal">Do primeiro diagnóstico à escala: um processo claro, em quatro passos — cada etapa te leva um degrau acima.</p>
 
       <div class="climb2">
-        <article class="climb-card reveal">
-          <span class="climb-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Diagnóstico</h3>
-          <p>Entendemos seu negócio, seu mercado e onde estão as oportunidades.</p>
-        </article>
-        <article class="climb-card reveal">
-          <span class="climb-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
-          </span>
-          <h3>Estratégia</h3>
-          <p>Definimos canais, mensagem e metas claras — você aprova antes de investir.</p>
-        </article>
-        <article class="climb-card reveal">
-          <span class="climb-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 L4 14 h6 l-1 8 9-12 h-6 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </span>
-          <h3>Execução</h3>
-          <p>Campanhas no ar, site convertendo, conteúdo publicado. Sem enrolação.</p>
-        </article>
-        <article class="climb-card reveal">
-          <span class="climb-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M3 17 L9 11 L13 15 L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6 h6 v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <h3>Escala</h3>
-          <p>Medimos, otimizamos e ampliamos o que dá resultado. Subida constante.</p>
-        </article>
+        <!-- Estilos dos cards estão no style.css (seção "A subida: cards v2") -->
+
+        <div class="sbd-grid">
+          <svg class="sbd-path" viewBox="0 0 1100 420" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M40 380 C 220 380, 260 300, 400 290 S 640 220, 720 200 S 980 90, 1060 60"/>
+          </svg>
+
+          <article class="sbd-card reveal">
+            <div class="sbd-top">
+              <span class="sbd-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="sbd-step">Etapa 01</span>
+            </div>
+            <h3>Diagnóstico</h3>
+            <p>Mergulhamos no seu negócio, no seu mercado e nos seus concorrentes para mapear onde estão as oportunidades reais de crescimento.</p>
+            <div class="sbd-meter" aria-hidden="true">
+              <div class="sbd-meter-track"><span class="sbd-meter-fill" style="--fill:25%"></span></div>
+              <div class="sbd-meter-label"><span>Início da subida</span><b>25%</b></div>
+            </div>
+          </article>
+
+          <article class="sbd-card reveal">
+            <div class="sbd-top">
+              <span class="sbd-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+              </span>
+              <span class="sbd-step">Etapa 02</span>
+            </div>
+            <h3>Estratégia</h3>
+            <p>Definimos canais, mensagem, orçamento e metas claras em um plano objetivo — que você entende e aprova antes de investir um real.</p>
+            <div class="sbd-meter" aria-hidden="true">
+              <div class="sbd-meter-track"><span class="sbd-meter-fill" style="--fill:50%"></span></div>
+              <div class="sbd-meter-label"><span>Plano aprovado</span><b>50%</b></div>
+            </div>
+          </article>
+
+          <article class="sbd-card reveal">
+            <div class="sbd-top">
+              <span class="sbd-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 L4 14 h6 l-1 8 9-12 h-6 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="sbd-step">Etapa 03</span>
+            </div>
+            <h3>Execução</h3>
+            <p>Campanhas no ar, site convertendo e conteúdo publicado — com prazos definidos, responsáveis claros e zero enrolação.</p>
+            <div class="sbd-meter" aria-hidden="true">
+              <div class="sbd-meter-track"><span class="sbd-meter-fill" style="--fill:75%"></span></div>
+              <div class="sbd-meter-label"><span>Máquina rodando</span><b>75%</b></div>
+            </div>
+          </article>
+
+          <article class="sbd-card reveal">
+            <div class="sbd-top">
+              <span class="sbd-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 17 L9 11 L13 15 L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6 h6 v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="sbd-step">Etapa 04</span>
+            </div>
+            <h3>Escala</h3>
+            <p>Medimos tudo, cortamos o que não performa e ampliamos o que dá resultado. Relatórios claros e subida constante, mês após mês.</p>
+            <div class="sbd-meter" aria-hidden="true">
+              <div class="sbd-meter-track"><span class="sbd-meter-fill" style="--fill:100%"></span></div>
+              <div class="sbd-meter-label"><span>Faturamento em aclive</span><b>100%</b></div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -328,7 +367,7 @@
           <!-- EDITAR: e-mail e Instagram reais -->
           <a href="mailto:digitalaclive@gmail.com">digitalaclive@gmail.com</a>
           <span aria-hidden="true">•</span>
-          <a href="https://instagram.com/digitalaclive" target="_blank" rel="noopener">@digitalaclive</a>
+          <a href="https://instagram.com/agencia.aclive" target="_blank" rel="noopener">@agencia.aclive</a>
         </div>
       </div>
 
