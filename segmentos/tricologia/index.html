@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tráfego Pago para Tricologia | Aclive — Agenda cheia de pacientes, não de curiosos</title>
+  <meta name="description" content="Especialistas em tráfego pago para tricologia: transplante capilar (FUE/DHI), PRP e tratamentos de alopecia. Campanhas que atraem pacientes qualificados, reduzem curiosos e no-show, respeitam as políticas de saúde e otimizam por custo por agendamento.">
+
+  <!-- ============================================================
+       PÁGINA DE SEGMENTO: TRICOLOGIA  (slug: /segmentos/tricologia/)
+       Página com estilos próprios (bloco <style> abaixo, prefixo .tri-)
+       para um visual mais exclusivo. Usa as variáveis de cor globais
+       do /style.css, então mantém a identidade da Aclive.
+       ============================================================ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=4">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '24704770449145082');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=24704770449145082&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- ====== Estilos exclusivos desta página (tricologia) ====== -->
+  <style>
+    .tri { --tri-brand: var(--accent, #2563eb); --tri-brand-2: var(--accent-2, #60a5fa); }
+
+    /* HERO */
+    .tri-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 10rem 0 5rem;
+      background:
+        radial-gradient(70% 60% at 80% 10%, rgba(37,99,235,.28), transparent 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(96,165,250,.15), transparent 60%),
+        var(--navy, #050e2b);
+      color: var(--text, #f4f7fd);
+    }
+    .tri-hero .container { position: relative; z-index: 2; }
+    .tri-hero-chart { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--accent-2,#60a5fa); opacity: .45; z-index: 1; pointer-events: none; }
+    .tri-eyebrow {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--font-display, sans-serif); font-weight: 700;
+      font-size: .78rem; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--accent-2, #60a5fa);
+      border: 1px solid rgba(96,165,250,.35); background: rgba(96,165,250,.08);
+      padding: .5rem 1rem; border-radius: 100px; margin-bottom: 1.6rem;
+    }
+    .tri-eyebrow b { color: #fff; }
+    .tri-hero h1 {
+      font-family: var(--font-display, sans-serif); font-weight: 800;
+      font-size: clamp(2.1rem, 5.2vw, 4rem); line-height: 1.08; letter-spacing: -.03em;
+      max-width: 15ch; margin: 0 0 1.4rem;
+    }
+    .tri-hero h1 .g {
+      background: linear-gradient(100deg, var(--accent,#2563eb), var(--accent-2,#60a5fa));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .tri-lead { max-width: 60ch; color: var(--text-dim, #a8b6d8); font-size: 1.12rem; line-height: 1.7; }
+    .tri-lead strong { color: #fff; font-weight: 600; }
+    .tri-cta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.4rem; }
+    .tri-trust { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2.8rem; }
+    .tri-trust span {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .85rem; color: var(--text-dim,#a8b6d8);
+      border: 1px solid var(--border, rgba(147,197,253,.16)); border-radius: 100px;
+      padding: .45rem .9rem; background: rgba(255,255,255,.02);
+    }
+    .tri-trust svg { width: 15px; height: 15px; color: var(--accent-2,#60a5fa); flex: none; }
+
+    /* SEÇÕES */
+    .tri-sec { padding: 6rem 0; }
+    .tri-sec.light { background: var(--paper, #f4f7fe); color: var(--ink, #0a1330); }
+    .tri-sec.dark  { background: var(--navy-2, #081538); color: var(--text, #f4f7fd); }
+    .tri-kicker {
+      font-family: var(--font-display, sans-serif); font-weight: 700;
+      font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--tri-brand); margin-bottom: .8rem;
+    }
+    .tri-h2 {
+      font-family: var(--font-display, sans-serif); font-weight: 800;
+      font-size: clamp(1.7rem, 3.8vw, 2.7rem); line-height: 1.15; letter-spacing: -.02em;
+      margin: 0 0 1rem; max-width: 22ch;
+    }
+    .tri-h2 em { font-family: var(--font-serif, Georgia, serif); font-style: italic; font-weight: 400; }
+    .tri-sub { max-width: 62ch; font-size: 1.05rem; line-height: 1.7; opacity: .9; }
+
+    /* FAIXA "A VERDADE" */
+    .tri-truth {
+      background: linear-gradient(100deg, var(--accent,#2563eb), var(--accent-2,#60a5fa));
+      color: #fff; padding: 3.6rem 0;
+    }
+    .tri-truth .container { display: grid; gap: 1rem; }
+    .tri-truth h2 {
+      font-family: var(--font-display, sans-serif); font-weight: 800;
+      font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.2; margin: 0; max-width: 26ch;
+    }
+    .tri-truth p { margin: 0; max-width: 60ch; font-size: 1.06rem; line-height: 1.65; opacity: .95; }
+
+    /* GRID DE DORES */
+    .tri-pains { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; margin-top: 3rem; }
+    .tri-pain {
+      background: #fff; border: 1px solid rgba(10,19,48,.09); border-radius: 18px;
+      padding: 1.8rem 1.6rem; box-shadow: 0 10px 28px rgba(10,19,48,.05);
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+    }
+    .tri-pain:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(10,19,48,.1); border-color: rgba(37,99,235,.25); }
+    .tri-pain-ic {
+      display: grid; place-items: center; width: 46px; height: 46px; border-radius: 12px;
+      background: rgba(239,68,68,.1); color: #ef4444; margin-bottom: 1.1rem;
+    }
+    .tri-pain-ic svg { width: 24px; height: 24px; }
+    .tri-pain h3 { font-family: var(--font-display,sans-serif); font-weight: 700; font-size: 1.12rem; color: var(--ink,#0a1330); margin: 0 0 .5rem; }
+    .tri-pain p { margin: 0; color: var(--ink-dim, #4a5877); font-size: .95rem; line-height: 1.6; }
+
+    /* POR QUE ESPECIALISTA (spotlight) */
+    .tri-why { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem; align-items: center; }
+    .tri-why-list { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 1rem; }
+    .tri-why-list li { position: relative; padding-left: 2.4rem; line-height: 1.55; }
+    .tri-why-list li strong { color: #fff; }
+    .tri-why-list li::before {
+      content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 8px;
+      background:
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 8.5 L7 11.5 L12 5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/62% no-repeat,
+        linear-gradient(135deg, var(--accent,#2563eb), var(--accent-2,#60a5fa));
+    }
+    .tri-why-card {
+      background: linear-gradient(160deg, rgba(37,99,235,.14), rgba(8,21,56,.4));
+      border: 1px solid var(--border, rgba(147,197,253,.16));
+      border-radius: 22px; padding: 2.2rem; color: var(--text,#f4f7fd);
+    }
+    .tri-why-card .big {
+      font-family: var(--font-display,sans-serif); font-weight: 800; font-size: 3.2rem; line-height: 1;
+      background: linear-gradient(100deg, var(--accent-2,#60a5fa), #fff);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .tri-why-card p { color: var(--text-dim,#a8b6d8); margin: .6rem 0 0; line-height: 1.6; }
+    .tri-why-card hr { border: none; border-top: 1px solid var(--border, rgba(147,197,253,.16)); margin: 1.4rem 0; }
+
+    /* MÉTODO */
+    .tri-method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; margin-top: 3rem; counter-reset: m; }
+    .tri-step {
+      counter-increment: m; position: relative; background: #fff;
+      border: 1px solid rgba(10,19,48,.09); border-radius: 18px; padding: 2rem 1.6rem 1.7rem;
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+    .tri-step:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(37,99,235,.12); }
+    .tri-step::before {
+      content: counter(m, decimal-leading-zero);
+      font-family: var(--font-serif, Georgia, serif); font-style: italic; font-size: 2rem;
+      color: var(--tri-brand); display: block; margin-bottom: .6rem;
+    }
+    .tri-step h3 { font-family: var(--font-display,sans-serif); font-weight: 700; font-size: 1.1rem; color: var(--ink,#0a1330); margin: 0 0 .45rem; }
+    .tri-step p { margin: 0; color: var(--ink-dim,#4a5877); font-size: .94rem; line-height: 1.55; }
+
+    /* FAQ */
+    .tri-faq { max-width: 780px; margin: 3rem auto 0; display: grid; gap: .9rem; }
+    .tri-faq details {
+      background: rgba(255,255,255,.03); border: 1px solid var(--border, rgba(147,197,253,.16));
+      border-radius: 14px; overflow: hidden;
+    }
+    .tri-faq summary {
+      list-style: none; cursor: pointer; padding: 1.15rem 1.4rem;
+      font-family: var(--font-display,sans-serif); font-weight: 600; font-size: 1.02rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .tri-faq summary::-webkit-details-marker { display: none; }
+    .tri-faq summary::after { content: "+"; color: var(--accent-2,#60a5fa); font-size: 1.5rem; line-height: 1; transition: transform .25s ease; }
+    .tri-faq details[open] summary::after { transform: rotate(45deg); }
+    .tri-faq p { margin: 0; padding: 0 1.4rem 1.3rem; color: var(--text-dim,#a8b6d8); line-height: 1.65; }
+
+    /* CTA FINAL */
+    .tri-final { text-align: center; }
+    .tri-final .tri-h2 { margin-inline: auto; max-width: 24ch; }
+    .tri-final p { max-width: 56ch; margin: 1rem auto 2rem; opacity: .9; }
+
+    @media (max-width: 900px) {
+      .tri-pains, .tri-method { grid-template-columns: 1fr 1fr; }
+      .tri-why { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    @media (max-width: 620px) {
+      .tri-pains, .tri-method { grid-template-columns: 1fr; }
+      .tri-hero { padding-top: 8rem; }
+    }
+  </style>
+</head>
+<body class="tri">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Aclive — início">
+        <img src="/logo-aclive.png" class="logo-img" alt="Aclive">
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="/#voce-tem">A Aclive</a>
+        <a href="/#servicos">Serviços</a>
+        <a href="/#subida">A subida</a>
+        <a href="/#depoimentos">Clientes</a>
+        <details class="nav-drop">
+          <summary>Segmentos</summary>
+          <div class="nav-drop-menu">
+            <a href="/segmentos/advocacia/">Advocacia</a>
+            <a href="/segmentos/estetica/">Clínicas de Estética</a>
+            <a href="/segmentos/arquitetura/">Arquitetura &amp; Design</a>
+            <a href="/segmentos/tricologia/">Tricologia</a>
+            <!-- EDITAR: novos segmentos entram aqui -->
+          </div>
+        </details>
+        <a href="/#contato" class="btn btn-primary btn-nav">Iniciar projeto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="tri-hero">
+    <svg class="tri-hero-chart" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path class="chart-line" d="M-40 760 L240 660 L430 690 L640 520 L820 560 L1050 330 L1220 370 L1480 120"/>
+      <circle class="chart-dot" cx="1220" cy="370" r="7"/>
+    </svg>
+
+    <div class="container">
+      <p class="seg-crumb reveal" style="color:var(--text-dim)"><a href="/" style="color:inherit">Início</a> <span aria-hidden="true">›</span> Segmentos <span aria-hidden="true">›</span> Tricologia</p>
+
+      <span class="tri-eyebrow reveal">Tricologia · <b>Especialistas em Tráfego Pago</b></span>
+      <h1 class="reveal">Encha a agenda da sua clínica com <span class="g">pacientes</span> — não com curiosos.</h1>
+      <p class="tri-lead reveal">
+        Transplante capilar e tratamentos de alopecia são decisões de <strong>confiança e ticket alto</strong>.
+        A Aclive é especialista em <strong>tráfego pago para tricologia</strong>: montamos campanhas que atraem
+        quem realmente quer tratar o cabelo, filtram os curiosos e transformam cliques em
+        <strong>consultas agendadas</strong> — com previsibilidade.
+      </p>
+      <div class="tri-cta-row reveal">
+        <a href="https://wa.me/5531993667472?text=Ol%C3%A1!%20Atuo%20com%20tricologia%20e%20quero%20encher%20minha%20agenda%20com%20o%20tr%C3%A1fego%20pago%20da%20Aclive." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Quero encher minha agenda
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16 L16 4 M8 4 h8 v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#metodo" class="btn btn-ghost btn-lg">Ver como funciona</a>
+      </div>
+
+      <div class="tri-trust reveal">
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Meta Ads &amp; Google Ads</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 L4 7 v5 c0 4.5 3.4 7.6 8 9 4.6-1.4 8-4.5 8-9 V7 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> Dentro das políticas de saúde</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10 M10 20V4 M16 20v-7 M20 20H3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Foco em custo por agendamento</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M3 11a9 9 0 0 1 9-9 M21 13a9 9 0 0 1-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 6v5h5 M21 18v-5h-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Remarketing p/ o ciclo de decisão</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= A VERDADE (agitação) ================= -->
+  <section class="tri-truth">
+    <div class="container">
+      <h2 class="reveal">A verdade sobre anúncios em tricologia: lead barato não é paciente.</h2>
+      <p class="reveal">A maioria das clínicas queima verba com anúncios que geram <strong>volume de curiosos</strong> — gente que pergunta o preço no direct e some. O problema quase nunca é quanto você investe. É a <strong>estratégia por trás do investimento</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ================= DORES ================= -->
+  <section class="tri-sec light" id="dores">
+    <div class="container">
+      <p class="tri-kicker reveal">O que trava o seu crescimento</p>
+      <h2 class="tri-h2 reveal">Você reconhece alguma dessas <em>dores?</em></h2>
+
+      <div class="tri-pains">
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2"/><path d="M4 4 L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <h3>Leads curiosos, agenda vazia</h3>
+          <p>Muito clique, muita pergunta de preço no direct — e pouquíssimo agendamento. Você paga por lead, mas não por paciente.</p>
+        </article>
+
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18 M8 3v4 M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 14 l6 4 M15 14 l-6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <h3>No-show: marcam e não aparecem</h3>
+          <p>Buracos na agenda, cadeira parada e equipe ociosa. Sem qualificação e sem lembrete, o paciente esfria antes da consulta.</p>
+        </article>
+
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 L4 7 v5 c0 4.5 3.4 7.6 8 9 4.6-1.4 8-4.5 8-9 V7 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12 L15 12 M12 9 v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" transform="rotate(45 12 12)"/></svg></span>
+          <h3>Conta de anúncio reprovada ou bloqueada</h3>
+          <p>Saúde tem regras rígidas no Meta e no Google. Antes/depois, promessas e termos errados derrubam o anúncio — e às vezes a conta inteira.</p>
+        </article>
+
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7 L11 14 L14 11 L20 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 17 h5 v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Custo por lead subindo, ticket travado</h3>
+          <p>A concorrência nos grandes centros encareceu o clique. Sem a estrutura certa, você paga cada vez mais e fecha cada vez menos.</p>
+        </article>
+
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8v3l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>O paciente pesquisa por meses e some</h3>
+          <p>Cabelo é decisão sensível e demorada — feita no sigilo, no celular. Sem remarketing e nutrição, você aparece uma vez e cai no esquecimento.</p>
+        </article>
+
+        <article class="tri-pain reveal">
+          <span class="tri-pain-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M17 8 a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z" stroke="currentColor" stroke-width="2"/><path d="M4 21 c0-3.3 4-5 9-5s9 1.7 9 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <h3>Dependência de indicação</h3>
+          <p>Indicação é ótima — mas imprevisível. Sem uma máquina de captação, o faturamento vira montanha-russa mês a mês.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POR QUE ESPECIALISTA ================= -->
+  <section class="tri-sec dark" id="especialista">
+    <div class="container tri-why">
+      <div class="reveal">
+        <p class="tri-kicker">Por que tráfego pago para tricologia é diferente</p>
+        <h2 class="tri-h2">Não é anúncio comum. É <em>saúde</em> — e um erro custa caro.</h2>
+        <p class="tri-sub">Rodar campanha de transplante e tratamento capilar exige domínio técnico e das políticas. É exatamente por isso que a Aclive se especializou nesse nicho:</p>
+        <ul class="tri-why-list">
+          <li><strong>Domínio das políticas de saúde</strong> do Meta e do Google — seu anúncio no ar, sem bloqueio de conta.</li>
+          <li><strong>Campanhas por intenção e procedimento</strong> (transplante FUE/DHI, PRP, tratamento de alopecia) — cada uma com CPL menor.</li>
+          <li><strong>Criativos que geram desejo</strong> respeitando as regras: prova, autoridade e transformação bem construídas.</li>
+          <li><strong>Qualificação de leads</strong>: filtramos o curioso antes de ele chegar na sua recepção.</li>
+          <li><strong>Remarketing e nutrição</strong> para o ciclo longo de decisão do paciente.</li>
+          <li><strong>Otimização por custo por agendamento</strong> e por paciente — não por lead barato.</li>
+        </ul>
+      </div>
+
+      <aside class="tri-why-card reveal">
+        <span class="big">R$ alto</span>
+        <p>Transplante e tratamentos capilares são um dos maiores investimentos estéticos do paciente — sem convênio. Cada paciente vale muito, então vale investir para atrair o <strong style="color:#fff">perfil certo</strong>, com método.</p>
+        <hr>
+        <span class="big">1 canal só</span>
+        <p>Depender só do Instagram ou só da indicação é frágil. Distribuímos a captação entre Meta, Google e remarketing para dar <strong style="color:#fff">previsibilidade</strong> à sua agenda.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= MÉTODO / O QUE FAZEMOS ================= -->
+  <section class="tri-sec light" id="metodo">
+    <div class="container">
+      <p class="tri-kicker reveal">Nosso sistema de captação</p>
+      <h2 class="tri-h2 reveal">Como enchemos sua agenda de <em>pacientes certos</em></h2>
+      <p class="tri-sub reveal" style="color:var(--ink-dim)">Um processo pensado para o jeito que o paciente de tricologia realmente decide.</p>
+
+      <div class="tri-method">
+        <article class="tri-step reveal">
+          <h3>Diagnóstico e oferta</h3>
+          <p>Entendemos seus procedimentos, ticket, região e diferencial para montar a oferta e a mensagem certas.</p>
+        </article>
+        <article class="tri-step reveal">
+          <h3>Campanhas por intenção</h3>
+          <p>FUE, DHI, PRP, tratamento de alopecia — cada procedimento com sua campanha, seu público e seu criativo.</p>
+        </article>
+        <article class="tri-step reveal">
+          <h3>Criativos de desejo</h3>
+          <p>Vídeos e artes que constroem autoridade e mostram transformação, sempre dentro das políticas de saúde.</p>
+        </article>
+        <article class="tri-step reveal">
+          <h3>Qualificação e WhatsApp</h3>
+          <p>Formulários e fluxos que filtram curiosos e levam o paciente certo direto para a conversa da sua equipe.</p>
+        </article>
+        <article class="tri-step reveal">
+          <h3>Remarketing inteligente</h3>
+          <p>Reimpactamos quem pesquisou e ainda não agendou, respeitando o tempo de decisão de quem trata cabelo.</p>
+        </article>
+        <article class="tri-step reveal">
+          <h3>Otimização por agendamento</h3>
+          <p>Acompanhamos custo por consulta e por paciente, ajustando as campanhas semana a semana.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ / OBJEÇÕES ================= -->
+  <section class="tri-sec dark" id="faq">
+    <div class="container">
+      <p class="tri-kicker reveal" style="text-align:center">Perguntas frequentes</p>
+      <h2 class="tri-h2 reveal" style="margin-inline:auto;text-align:center">Ainda com uma <em>dúvida?</em></h2>
+
+      <div class="tri-faq">
+        <details class="reveal">
+          <summary>Já tentei anúncios e não deu certo. O que muda com a Aclive?</summary>
+          <p>Muda a estratégia. Estruturamos campanhas por intenção e procedimento, qualificamos os leads antes da sua recepção, fazemos remarketing para o ciclo longo do paciente e otimizamos por <strong>custo por agendamento</strong> — não por lead barato. É a diferença entre volume e paciente na cadeira.</p>
+        </details>
+        <details class="reveal">
+          <summary>Minha conta de anúncios já foi reprovada ou bloqueada. Vocês resolvem?</summary>
+          <p>Sim. Saúde tem políticas rígidas no Meta e no Google, e é aí que a especialização importa: estruturamos criativos, textos e a conta para rodar dentro das regras, reduzindo drasticamente o risco de bloqueio.</p>
+        </details>
+        <details class="reveal">
+          <summary>Meu ticket é alto. Tráfego pago funciona mesmo assim?</summary>
+          <p>Funciona ainda melhor. Justamente por cada paciente valer muito, vale investir para atrair o perfil certo com previsibilidade. O foco não é lead barato — é retorno sobre cada agendamento.</p>
+        </details>
+        <details class="reveal">
+          <summary>Vou continuar recebendo curioso perguntando preço?</summary>
+          <p>Nosso trabalho é reduzir isso ao máximo. Com segmentação correta e qualificação, sua equipe passa a falar com quem tem intenção real de tratar — e não com quem só quer saber o valor.</p>
+        </details>
+        <details class="reveal">
+          <summary>Em quanto tempo vejo resultado?</summary>
+          <p>Os primeiros leads qualificados costumam chegar nas primeiras semanas. A otimização por custo por agendamento amadurece nos primeiros 90 dias, quando a máquina ganha previsibilidade.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="tri-sec light tri-final">
+    <div class="container">
+      <p class="tri-kicker reveal">Vamos virar esse jogo</p>
+      <h2 class="tri-h2 reveal">Sua próxima cadeira ocupada pode estar a <em>um anúncio de distância</em></h2>
+      <p class="reveal" style="color:var(--ink-dim)">Enquanto você decide, seu concorrente já está aparecendo para o paciente. Fale com a Aclive e monte uma máquina de agendamentos previsível para a sua clínica de tricologia.</p>
+      <div class="tri-cta-row reveal" style="justify-content:center">
+        <a href="https://wa.me/5531993667472?text=Ol%C3%A1!%20Atuo%20com%20tricologia%20e%20quero%20encher%20minha%20agenda%20com%20o%20tr%C3%A1fego%20pago%20da%20Aclive." class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.3 1.6Z"/></svg>
+          Quero encher minha agenda
+        </a>
+        <a href="/#contato" class="btn btn-ghost btn-lg" style="color:#0d1330">Preencher formulário</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="/" class="logo" aria-label="Aclive — início">
+        <img src="/logo-aclive.png" class="logo-img" alt="Aclive">
+      </a>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="/#voce-tem">A Aclive</a>
+        <a href="/#servicos">Serviços</a>
+        <a href="/segmentos/tricologia/">Tricologia</a>
+        <a href="/#contato">Contato</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> Aclive — Agência de Marketing. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5531993667472?text=Ol%C3%A1!%20Atuo%20com%20tricologia%20e%20quero%20encher%20minha%20agenda%20com%20o%20tr%C3%A1fego%20pago%20da%20Aclive." class="wa-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.3 1.6Z"/></svg>
+  </a>
+
+  <script src="/script.js"></script>
+</body>
+</html>
