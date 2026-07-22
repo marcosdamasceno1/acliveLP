@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0b1b40"/>
+  <!-- barras ascendentes -->
+  <rect x="14" y="40" width="7" height="8"  fill="#ffffff"/>
+  <rect x="24" y="34" width="7" height="14" fill="#ffffff"/>
+  <rect x="34" y="28" width="9" height="20" fill="#ffffff"/>
+  <!-- seta cruzando por cima -->
+  <path d="M12 44 L50 22" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M42 18 L52 21 L49 31" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
